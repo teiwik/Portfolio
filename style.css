@@ -44,9 +44,9 @@ h3::after {
 
 .firstLetter {
     font-size: 125%;
-    font-weight: 400;
     text-transform: uppercase;
     padding-left: 1rem;
+    font-weight: 700;
 }
 
 .strongText {
@@ -241,9 +241,14 @@ p {
       body {
           border: 5px solid red;
       }
+      header {
+        position: relative;
+        background: linear-gradient(145.55deg, #69DAF3 0%, #9B0C95 100%), #C4C4C4;
+        clip-path: polygon(100% 0, 100% 95%, 35% 100%, 0 100%, 0 0);
+    }
       
 
-      .img_block {
+    .img_block {
         margin: 2rem 0;
         flex: 50%;
         max-width: 100%;
