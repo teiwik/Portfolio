@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -86,6 +87,10 @@ p {
         padding-bottom: 12rem;
     }
 
+    .nav_desktop {
+        display: none;
+    }
+
     nav {
         z-index: 20;
         position: fixed;
@@ -125,6 +130,11 @@ p {
         overflow: hidden;
         padding: 6rem 7% 16rem;
         color: #fff;
+        background: #fff;
+    }
+
+    .portfolio h3::after {
+        background: #fff;
     }
 
     .portfolio::before {
@@ -137,6 +147,7 @@ p {
         height: 90%;
         top: 10rem;
         transform: skewY(6deg);
+        box-shadow: 0 0 20rem  rgb(255, 255, 255);
     }
 
     .gallery .img_container {
@@ -241,6 +252,7 @@ p {
       body {
           border: 5px solid red;
       }
+
       header {
         position: relative;
         background: linear-gradient(145.55deg, #69DAF3 0%, #9B0C95 100%), #C4C4C4;
@@ -296,9 +308,111 @@ p {
 
 /* desktop verze */
 @media (min-width: 1001px) {
-    body {
-        border: 10px solid green;
+    p {
+        margin: 2rem;
+        font-size: 1.8rem;
     }
+
+    h3 {
+        font-size: 3.2rem;
+    }
+
+    h3::after {
+        content: "";
+        position: absolute;
+        width: 8rem;
+        height: .6rem;
+        background-color: #69DAF3;
+        right: -9.5rem;
+        top: calc(50% - .3rem);
+    }
+    
+
+    header h1 {
+        font-size: 8rem;
+        font-weight: 300;
+        line-height: 9rem;
+        padding-top: 20rem;
+        padding-bottom: 0;
+    }
+
+    header h2 {
+        font-size: 6.4rem;
+        width: 50rem;
+        line-height: 110%;
+        padding-top: 6rem;
+        padding-bottom: 20rem;
+    }
+
+    nav {
+        position: absolute;
+        top: 5.5rem;
+    }
+
+    .nav_desktop {
+        display: flex;
+    }
+
+    .nav_desktop li {
+        list-style-type: none;
+        margin-left: 5rem;
+    }
+
+    .nav_desktop li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .nav_desktop li:last-child {
+        margin-right: 5rem;
+    }
+
+    .menu_icon-line{
+        display: none;
+    }
+
+    .portfolio::before {
+        height: 93%;
+        transform: skewY(6deg);
+    }
+
+    .portfolio {
+        overflow-y: hidden;
+        overflow: visible;
+    }
+
+    .portfolio .portfolio_background-left {
+        position: absolute;
+        width: 1100px;
+        height: 92.4%;
+        left: -98rem;;
+        top: 9.9rem; 
+        background: linear-gradient(170.91deg, #69DAF3 -0.44%, #9B0C95 100.62%), #C4C4C4;
+transform: rotate(-6deg);
+        z-index: -1;
+    }
+
+    .portfolio .portfolio_background-right {
+        position: absolute;
+        width: 1100px;
+        height: 92.5%;
+        right: -98rem;;
+        top: 11.2rem; 
+        background: linear-gradient(170.91deg, #69DAF3 -0.44%, #9B0C95 100.62%), #C4C4C4;
+transform: rotate(-6deg);
+        z-index: -1;
+    }
+
+
+
+    .firstLetter {
+        padding-left: 0;
+    }
+
+
 
     
 }
