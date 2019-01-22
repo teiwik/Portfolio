@@ -412,6 +412,20 @@ transform: rotate(-6deg);
         padding-left: 0;
     }
 
+    .contact input[type="email"] {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .contact textarea {
+        min-height: 18rem;
+    }
+
+
+    .contact input[type="submit"] {
+        padding: 1.8rem 0;
+    }
+
 
 
     
